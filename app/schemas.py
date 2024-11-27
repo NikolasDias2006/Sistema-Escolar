@@ -1,5 +1,24 @@
 from pydantic import BaseModel
 
+class UserCreate(BaseModel):
+    nome: str
+    email: str
+    senha: str
+    cargo: str 
+
+class UserResponse(BaseModel):
+    id: int
+    nome: str
+    email: str
+    cargo: str
+    
+    class Config:
+        orm_mode = True
+
+class UserLogin(BaseModel):
+    email: str
+    senha: str
+    
 class LoginSchema(BaseModel):
     email: str
     senha: str
