@@ -1,4 +1,4 @@
------Gerenciamento Escolar-----
+-----Sistema Escolar-----
 
 informaçoes: 	
     funcionarios(diretor, coordenador e professores):
